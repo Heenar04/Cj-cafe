@@ -23,7 +23,7 @@ const Item = ({ item, selected_count, setShowWriteReview, setShowReviews, setSel
     setShowWriteReview(true);
   };
   return (
-    <>
+    <div>
       <img src={item.image} class="item-image" alt="" />
       <div class="info">
         <div class="name">{item.name}</div>
@@ -56,7 +56,7 @@ const Item = ({ item, selected_count, setShowWriteReview, setShowReviews, setSel
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
