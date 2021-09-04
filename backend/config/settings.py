@@ -9,13 +9,13 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-import os
+
 from pathlib import Path
 import django_heroku
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
-import django_heroku
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -61,7 +61,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -85,18 +84,28 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
-
+# Heroku Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dda9l5hprqnhv0',
-        'USER': 'kuzxpvvcwmzlpv',
-        'HOST': 'ec2-52-45-179-101.compute-1.amazonaws.com',
+        'NAME': 'dch7n72frg031v',
+        'USER': 'ldpelxievviuhf',
         'PORT': 5432,
-        'PASSWORD': '93d189a256710fb1a495acbfb465f2b63a89f5cea32d4f5b5b92c540a4d3501f',  }
+        'HOST': 'ec2-23-23-164-251.compute-1.amazonaws.com',
+        'PASSWORD': '8a9353d3c2aa7a6baaf128ed3c6fc0a4ede1cccfec1ccc0222e089e0871b8975',
+    }
 }
+
+# Local Database
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # Heroku PostgreSQL Database
 django_heroku.settings(locals())
@@ -139,23 +148,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[
-    BASE_DIR/ 'static']
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals())
 
-cloudinary.config( 
-  cloud_name = "dnevfkggs", 
-  api_key = "725332466165313", 
-  api_secret = "-8tpBlYhPfYMceidHzzeElkElCY" 
+cloudinary.config(
+    cloud_name="techis",
+    api_key="886187759951178",
+    api_secret="WGcWrWfkPlxdOCdlFaLTdjSNtfo",
+    secure=True
 )
-
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
