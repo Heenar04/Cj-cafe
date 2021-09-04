@@ -91,11 +91,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dch7n72frg031v',
-        'USER': 'ldpelxievviuhf',
+        'NAME': 'd8ei7ian7u2las',
+        'USER': 'qwzpbbrrjpmkrv',
         'PORT': 5432,
-        'HOST': 'ec2-23-23-164-251.compute-1.amazonaws.com',
-        'PASSWORD': '8a9353d3c2aa7a6baaf128ed3c6fc0a4ede1cccfec1ccc0222e089e0871b8975',
+        'HOST': 'ec2-44-195-201-3.compute-1.amazonaws.com',
+        'PASSWORD': '92136a750c71cbfb8c031725a6a8e616936bc38c4456e6291df3ddd8d1b73315',
     }
 }
 
@@ -156,10 +156,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 cloudinary.config(
-    cloud_name="techis",
-    api_key="886187759951178",
-    api_secret="WGcWrWfkPlxdOCdlFaLTdjSNtfo",
-    secure=True
+  cloud_name = "dnevfkggs", 
+  api_key = "725332466165313", 
+  api_secret = "-8tpBlYhPfYMceidHzzeElkElCY" ,
+  secure=True
 )
 
 REST_FRAMEWORK = {
