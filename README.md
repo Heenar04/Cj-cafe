@@ -3,8 +3,8 @@
 Cafe Menu App, with a frontend built in React & Redux and a backend built in Django API.
 ```
 ```
-Check out [FRONTEND LIVE DEMO](https://cjmenu-frontend-production.herokuapp.com/) here!!
-Check out [API LIVE DEMO](https://cjmenu-backend-production.herokuapp.com/) here!!
+Check out [FRONTEND LIVE DEMO](https://cj-cafe.herokuapp.com/) here!!
+Check out [API LIVE DEMO](https://cj-cafe-backend.herokuapp.com/items/) here!!
 ```
 ## Tech used
 
@@ -14,7 +14,7 @@ Check out [API LIVE DEMO](https://cjmenu-backend-production.herokuapp.com/) here
 ## How to Install
 1. Git Clone
 ```
-git clone [](git@github.com:Heenar04/Cj-menu.git)
+git clone [](https://github.com/Heenar04/Cj-cafe)
 ```
 2. Backend setting
 ```
