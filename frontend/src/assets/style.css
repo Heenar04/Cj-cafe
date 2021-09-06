@@ -106,9 +106,9 @@ ul.items li .info .name-bottom button.link-button {
 
 ul.items li .info .info-bottom {
   position: absolute;
-  left: 15px;
+  left: 48%;
   bottom: 10px;
-  width: 90%;
+  width:100%;
   display: flex;
   justify-content: space-between;
 }
