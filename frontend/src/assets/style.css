@@ -71,6 +71,10 @@ ul.items li img.item-image {
   width: 30%;
   height: fit-content;
 }
+img.item.image{
+  width: 30%;
+  height: fit-content;
+}
 
 ul.items li .info {
   width: 70%;
