@@ -68,18 +68,24 @@ ul.items li {
 }
 
 ul.items li img.item-image {
-  width: 30%;
-  height: fit-content;
+  width: 400px;
+  height: 300px;
+  margin:30px ;
 }
-img.item.image{
-  width: 30%;
-  height: fit-content;
+
+.blog{
+  display: flex;
+  width: 100%;
+}
+.blog-img{
+  width: 30vw;
 }
 
 ul.items li .info {
   width: 70%;
   position: relative;
   padding: 5px 15px;
+  margin: 30px;
 }
 
 ul.items li .info .name {
@@ -89,7 +95,8 @@ ul.items li .info .name {
 
 ul.items li .info .name-bottom {
   padding: 10px 0;
-  display: flex;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 ul.items li .info .name-bottom img.icon-heart {
@@ -110,15 +117,14 @@ ul.items li .info .name-bottom button.link-button {
 
 ul.items li .info .info-bottom {
   position: absolute;
-  left: 48%;
+  right: 20px;
   bottom: 10px;
-  width:100%;
   display: flex;
   justify-content: space-between;
 }
 
 ul.items li .info .info-bottom .price {
-  padding-top: 5px;
+  padding: 5px;
   font-size: 20px;
 }
 

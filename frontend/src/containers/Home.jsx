@@ -63,12 +63,12 @@ const Home = () => {
       </section>
       <section class="content">
         {showCartList ? (
-          <>
+          <div>
             <h1>Selected Items</h1>
             <p>Please show this page to the waiter.</p>
-          </>
+          </div>
         ) : (
-          <>
+          <div>
             <h1>How to order?</h1>
             <p>
               Thank you for loading Cj Menu by QR code.
@@ -89,8 +89,10 @@ const Home = () => {
                 <a href="/?category=bagel">Bagel</a>
               </li>
             </ul>
-          </>
+          </div>
         )}
+      </section>
+      <section>
         <ul class="items">{items && items.map((item) => showItem(item))}</ul>
       </section>
 

@@ -23,21 +23,23 @@ const Item = ({ item, selected_count, setShowWriteReview, setShowReviews, setSel
     setShowWriteReview(true);
   };
   return (
-    <div>
-      <img src={item.image} class="item-image" alt="" />
+    <div class="blog">
+     <div class="blog-img"> <img src={item.image} class="item-image" alt="" /></div>
       <div class="info">
         <div class="name">{item.name}</div>
         <div class="name-bottom">
+        <div>
           <img src={ImgIconHeart} class="icon-heart" alt="" />
           <div class="count">({item.total_like_count})</div>
+        </div>
+          
           <button class="link-button" onClick={() => clickCheckReviews()}>
             Check Reviews
           </button>
           <button class="link-button" onClick={() => clickWriteReview()}>
             Write Review
           </button>
-        </div>
-        <div class="info-bottom">
+          <div class="info-bottom">
           <div class="price">${item.price}</div>
           {selected_count == 0 ? (
             <div class="add" onClick={clickAddCart}>
@@ -55,6 +57,8 @@ const Item = ({ item, selected_count, setShowWriteReview, setShowReviews, setSel
             </div>
           )}
         </div>
+        </div>
+
       </div>
     </div>
   );
