@@ -47,9 +47,9 @@ ul.category li.active a:visited {
   height: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .content {
-    padding: 0px 15px 100px 15px;
+    padding: 0px 15px 10px 15px;
   }
 }
 
@@ -254,7 +254,7 @@ footer button.link-button {
   font-weight: bold;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   footer .subtotal {
     font-size: 15px;
   }
@@ -386,11 +386,27 @@ footer button.link-button {
   overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .popup .popup-content {
     top: 20%;
     left: 10%;
     width: 76%;
     padding: 0 4%;
   }
+}
+
+@media screen and (max-width: 600px) {
+  ul.items li .info {
+    left: 20%;
+    
+  }
+
+  ul.items li img.item-image  {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+}
+ul.items li .info{
+  width: 30%;
+  margin: 10px;}
 }
