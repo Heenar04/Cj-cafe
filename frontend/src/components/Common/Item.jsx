@@ -30,7 +30,7 @@ const Item = ({ item, selected_count, setShowWriteReview, setShowReviews, setSel
         <div class="name-bottom">
         <div>
           <img src={ImgIconHeart} class="icon-heart" alt="" />
-          <div class="count">({item.total_like_count})</div>
+          <div class="count" >({item.total_like_count})</div>
         </div>
           
           <button class="link-button" onClick={() => clickCheckReviews()}>
