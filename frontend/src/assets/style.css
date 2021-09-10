@@ -47,9 +47,9 @@ ul.category li.active a:visited {
   height: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .content {
-    padding: 0px 15px 100px 15px;
+    padding: 0px 15px 10px 15px;
   }
 }
 
@@ -69,22 +69,24 @@ ul.items li {
 
 ul.items li img.item-image {
   width: 350px;
-  height: 300px;
+}
+.heart{
+  display: flex;
 }
 
 .blog{
   display: flex;
   width: 100%;
+  justify-content: space-evenly;
 }
 .blog-img{
   width: 30vw;
 }
 
 ul.items li .info {
-  width: 300px;
+  width: 60%;
   position: relative;
   padding: 5px 15px;
-  margin: 0 auto;
 }
 
 ul.items li .info .name {
@@ -92,11 +94,7 @@ ul.items li .info .name {
   font-size: 20px;
 }
 
-ul.items li .info .name-bottom {
-  padding: 10px 0;
-  /* display: flex;
-  flex-direction: column; */
-}
+
 
 ul.items li .info .name-bottom img.icon-heart {
   width: 30px;
@@ -152,17 +150,25 @@ ul.items li .info .info-bottom .number .minus {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+  
   ul.items {
     padding: 0px;
   }
-  .blog{
+  /* .blog{
     flex-direction: column;
-  
+    padding: 20px;
+    justify-content: space-evenly;
+
+  } */
+  .blog-img{
+    margin: 0 auto;
+    width: 200px;
   }
   
   ul.items li .info{
     position: relative;
+    width: 150px;
 
   }
   ul.items li .info .name {
@@ -172,6 +178,9 @@ ul.items li .info .info-bottom .number .minus {
   }
   ul.items li img.item-image{
     margin: 5px;
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
   }
   ul.items li .info .name-bottom img.icon-heart {
     width: 20px;
@@ -211,7 +220,11 @@ ul.items li .info .info-bottom .number .minus {
     line-height: 24px;
   }
 }
-
+@media screen and (max-width: 1000px){
+  ul.items li .info{
+    width: 300px;
+  }
+}
 /****************************
 * Header
 *****************************/
