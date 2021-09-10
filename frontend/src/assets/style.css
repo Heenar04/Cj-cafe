@@ -165,7 +165,9 @@ ul.items li .info .info-bottom .number .minus {
     margin: 0 auto;
     width: 200px;
   }
-  
+  ul.category li a{
+    margin-right:5px ;
+  }
   ul.items li .info{
     position: relative;
     width: 150px;
