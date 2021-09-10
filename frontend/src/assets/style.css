@@ -38,7 +38,7 @@ ul.category li.active a:visited {
 }
 
 .content {
-  padding: 0px 30px 2px 30px;
+  padding: 0px 30px 20px 30px;
 }
 
 .inner {
@@ -70,7 +70,6 @@ ul.items li {
 ul.items li img.item-image {
   width: 350px;
   height: 300px;
-  margin:30px ;
 }
 
 .blog{
@@ -82,10 +81,10 @@ ul.items li img.item-image {
 }
 
 ul.items li .info {
-  width: 70%;
+  width: 300px;
   position: relative;
   padding: 5px 15px;
-  margin: 30px;
+  margin: 0 auto;
 }
 
 ul.items li .info .name {
@@ -153,16 +152,27 @@ ul.items li .info .info-bottom .number .minus {
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   ul.items {
-    padding: 0;
+    padding: 0px;
   }
+  .blog{
+    flex-direction: column;
+  
+  }
+  
+  ul.items li .info{
+    position: relative;
 
+  }
   ul.items li .info .name {
     font-weight: bold;
     font-size: 14px;
+    
   }
-
+  ul.items li img.item-image{
+    margin: 5px;
+  }
   ul.items li .info .name-bottom img.icon-heart {
     width: 20px;
   }
@@ -179,7 +189,7 @@ ul.items li .info .info-bottom .number .minus {
 
   ul.items li .info .info-bottom {
     position: relative;
-    padding: 5px 0 0 0;
+    /* padding: 5px 0 0 0; */
     left: 0;
     bottom: 0;
   }
@@ -191,7 +201,7 @@ ul.items li .info .info-bottom .number .minus {
 
   ul.items li .info .info-bottom .add {
     font-size: 14px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     line-height: 24px;
   }
 
@@ -386,15 +396,15 @@ footer button.link-button {
   overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
   ul.items li .info{
-  width: 30%;
-  padding-left: 20%;
+  left:30%;
+  margin: 20px;
+  position: relative;
   }
   ul.items li img.item-image{
-    width: 230px;
+    width: 200px;
   }
-}
-
+} */
 
 
