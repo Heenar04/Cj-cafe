@@ -58,9 +58,9 @@ const Item = ({ item, selected_count, setShowWriteReview, setShowReviews, setSel
           )}
         </div>
         </div>
-
       </div>
     </div>
+    
   );
 };
 

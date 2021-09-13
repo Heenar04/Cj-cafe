@@ -150,6 +150,8 @@ ul.items li .info .info-bottom .number .minus {
   cursor: pointer;
 }
 
+
+
 @media screen and (max-width: 850px) {
   
   ul.items {
@@ -222,10 +224,34 @@ ul.items li .info .info-bottom .number .minus {
     line-height: 24px;
   }
 }
+@media screen and (max-width: 550px) {
+  .popup {
+    width: 100%;
+  }
+  .popup-content .innter {
+    width: 119%;
+  }
+  .popup .cross{
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 550px){
+  .popup .popup-content{
+    
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    top: 15%;
+    left: 14%;
+    width: 56%;
+    padding: 14px 20px;
+  }
+}
 @media screen and (max-width: 1000px){
   ul.items li .info{
     width: 300px;
   }
+ 
 }
 /****************************
 * Header
@@ -315,14 +341,21 @@ footer button.link-button {
 }
 
 .popup .popup-content {
-  position: absolute;
+  /* position: absolute;
   background-color: white;
   border: 1px solid black;
   top: 20%;
   left: 30%;
   width: 40%;
   padding: 0 20px;
-  max-height: 60%;
+  max-height: 60%; */
+  position: absolute;
+  background-color: white;
+  border: 2px solid black;
+  top: 15%;
+  left: 14%;
+  width: 56%;
+  padding: 14px 20px;
 }
 
 .popup h2 {
@@ -383,7 +416,7 @@ footer button.link-button {
   padding: 5px 15px;
   font-weight: bold;
   font-family: "Hiragino Mincho ProN";
-  margin-bottom: 30px;
+  margin: 3px;
 }
 
 .popup ul.reviews {
