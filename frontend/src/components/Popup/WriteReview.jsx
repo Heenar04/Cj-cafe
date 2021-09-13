@@ -72,9 +72,10 @@ const WriteReview = ({ selectedItemId, setSelectedItemId, setShowWriteReview }) 
             </ul>
             <input onChange={inputName} type="text" name="name" placeholder="Enter your name" required />
             <textarea onChange={inputBody} name="body" placeholder="Enter your review" required></textarea>
-            <button onClick={sendReviewButton}>Send Review</button>
+            <div class="send"><button onClick={sendReviewButton}>Send Review </button><div/>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
