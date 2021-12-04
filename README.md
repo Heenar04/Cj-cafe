@@ -14,7 +14,7 @@ Check out [API LIVE DEMO](https://backend-cafe-production.herokuapp.com/) here!!
 ## How to Install
 1. Git Clone
 ```
-git clone [](https://github.com/Heenar04/Cj-cafe)
+git clone (https://github.com/Heenar04/Cj-cafe)
 ```
 2. Backend setting
 ```
